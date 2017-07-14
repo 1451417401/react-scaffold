@@ -1,45 +1,45 @@
 {
-  "name": "manage-react",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --progress --colors --hot --content-base ./ --history-api-fallback --config ./webpack.config.dev.js",
-    "build": "webpack --progress --colors --hide-modules --config ./webpack.config.prd.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "autoprefixer-loader": "^3.2.0",
-    "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "babel-plugin-transform-decorators-legacy": "^1.3.4",
-    "babel-polyfill": "^6.23.0",
-    "babel-preset-env": "^1.5.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "css-loader": "^0.28.2",
-    "extract-text-webpack-plugin": "^2.1.0",
-    "file-loader": "^0.11.2",
-    "html-webpack-plugin": "^2.29.0",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.5",
-    "style-loader": "^0.18.0",
-    "webpack": "^2.6.0",
-    "webpack-dev-server": "^2.5.0"
-  },
-  "dependencies": {
-    "classnames": "^2.2.5",
-    "isomorphic-fetch": "^2.2.1",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-redux": "^5.0.5",
-    "react-router": "^3.0.2",
-    "react-router-redux": "^4.0.8",
-    "redux": "^3.7.1",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.2.0"
-  }
+    "name": "react-scaffold",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack-dev-server --progress --colors --hot --content-base ./ --history-api-fallback --config ./webpack.config.dev.js",
+        "build": "webpack --progress --colors --hide-modules --config ./webpack.config.prd.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer-loader": "^3.2.0",
+        "babel-core": "^6.24.1",
+        "babel-loader": "^7.0.0",
+        "babel-plugin-transform-decorators-legacy": "^1.3.4",
+        "babel-polyfill": "^6.23.0",
+        "babel-preset-env": "^1.5.1",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-0": "^6.24.1",
+        "css-loader": "^0.28.2",
+        "extract-text-webpack-plugin": "^2.1.0",
+        "file-loader": "^0.11.2",
+        "html-webpack-plugin": "^2.29.0",
+        "node-sass": "^4.5.3",
+        "sass-loader": "^6.0.5",
+        "style-loader": "^0.18.0",
+        "webpack": "^2.6.0",
+        "webpack-dev-server": "^2.5.0"
+    },
+    "dependencies": {
+        "classnames": "^2.2.5",
+        "isomorphic-fetch": "^2.2.1",
+        "react": "^15.5.4",
+        "react-dom": "^15.5.4",
+        "react-redux": "^5.0.5",
+        "react-router": "^3.0.2",
+        "react-router-redux": "^4.0.8",
+        "redux": "^3.7.1",
+        "redux-logger": "^3.0.6",
+        "redux-thunk": "^2.2.0"
+    }
 }
