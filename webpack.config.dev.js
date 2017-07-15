@@ -4,7 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        app: [
+        index: [
             "./index.js",
             'webpack-dev-server/client?http://localhost:8080',
             'webpack/hot/only-dev-server'

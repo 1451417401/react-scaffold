@@ -5,12 +5,12 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        app: "./index.js"
+        index: "./index.js"
     },
     output: {
         publicPath: "/assets/",
         path: path.resolve(__dirname, 'dist/assets'),
-        filename: "index.js"
+        filename: "index.[chunkhash].js"
     },
     resolve: {
         extensions: ['.js', '.jsx', '.scss', '.css']
