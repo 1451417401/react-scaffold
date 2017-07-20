@@ -1,4 +1,5 @@
-var path = require('path')
+var path = require('path');
+var webpack=require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -44,6 +45,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'template/template.html'
-        })
+        }),
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+            }
+        }),
     ]
 }

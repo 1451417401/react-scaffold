@@ -17,14 +17,14 @@ ReactDOM.render(
     <Provider store={store}>
     { /* Tell the Router to use our enhanced history */ }
     <Router history={history}>
-        <Route path="/" component={routerComponent.Login}></Route>
+        <Route path="/" onEnter={checkLogin} component={routerComponent.Home}></Route>
         <Route path="/home" onEnter={checkLogin} component={routerComponent.Home}>
             <IndexRoute component={routerComponent.Example}/>
             <Route path="testData" component={routerComponent.TestData}/>
             <Route path="state" component={routerComponent.SetDataTest}/>
             <Route path="example" component={routerComponent.Example}/>
         </Route>
-        
+        <Route path="/*" component={routerComponent.Login}></Route>
     </Router>
   </Provider>,
     document.getElementById('main')
@@ -36,7 +36,7 @@ function checkLogin() {
     //     .then(response => response.json())
     //     .then(json => {
     //         if (!json.result) {
-    //             browserHistory.push('/');
+    //             browserHistory.push('/login');
     //         }
     //     })
 
