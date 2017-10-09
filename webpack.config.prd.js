@@ -40,12 +40,12 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin("style.css"),
         new webpack.optimize.CommonsChunkPlugin({
-            name: 'common'
+            name: 'vender'
         }),
         new HtmlWebpackPlugin({
             filename: '../index.html',
             template: 'template/template.html',
-            chunks:['common','index']
+            chunks:['vender','index']
         }),
         new webpack.DefinePlugin({
             'process.env': {
