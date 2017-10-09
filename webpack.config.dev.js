@@ -5,16 +5,13 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        index: [
-            "./index.js",
-            'webpack-dev-server/client?http://localhost:8080',
-            'webpack/hot/only-dev-server'
-        ]
+        index: './index.js',
+        vender: ['react','react-dom']
     },
     output: {
         publicPath: "/",
         path: path.resolve(__dirname, 'dist/assets'),
-        filename: "index.js"
+        filename: "[name].js"
     },
     resolve: {
         extensions: ['.js', '.jsx', '.scss', '.css']
@@ -42,9 +39,13 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin("style.css"),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'common'
+        }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: 'template/template.html'
+            template: 'template/template.html',
+            chunks:['common','index']
         }),
         new webpack.DefinePlugin({
             'process.env': {

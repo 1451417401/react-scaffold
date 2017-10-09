@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env NODE_ENV=dev  webpack-dev-server --progress --colors --hot --content-base ./ --history-api-fallback --config ./webpack.config.dev.js",
+    "start": "cross-env NODE_ENV=dev  webpack-dev-server --progress --colors --port 800 --hot --content-base ./ --history-api-fallback --config ./webpack.config.dev.js",
     "build": "cross-env NODE_ENV=prd  webpack --progress --colors --hide-modules --config ./webpack.config.prd.js"
   },
   "author": "",
