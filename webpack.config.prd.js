@@ -12,7 +12,7 @@ module.exports = {
     output: {
         publicPath: "/assets/",
         path: path.resolve(__dirname, 'dist/assets'),
-        filename: "[name].js"
+        filename: "[name].[chunkhash].js"
     },
     resolve: {
         extensions: ['.js', '.jsx', '.scss', '.css']
